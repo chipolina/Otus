@@ -19,7 +19,7 @@ class Triangle(Figure):
 
         """
         if not (self.a + self.b > self.c and self.a + self.c > self.b and self.b + self.c > self.a):
-            raise ValueError('Sum of two sides must be grater than third side')
+            raise ValueError('Сумма двух сторон должна быть больше третьей')
 
     @property
     def area(self) -> Union[float, int]:
