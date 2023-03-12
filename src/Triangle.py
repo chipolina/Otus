@@ -19,13 +19,13 @@ class Triangle(Figure):
 
         """
         if not (self.a + self.b > self.c and self.a + self.c > self.b and self.b + self.c > self.a):
-            raise ValueError
+            raise ValueError('Sum of two sides must be grater than third side')
 
     @property
-    def area(self) -> float:
+    def area(self) -> Union[float, int]:
         p = self.perimeter
         return round((sqrt(p * (p - self.a) * (p - self.b) * (p - self.c))), 2)
 
     @property
-    def perimeter(self) -> float:
+    def perimeter(self) -> Union[float, int]:
         return round(((self.a + self.b + self.c) / 2), 2)

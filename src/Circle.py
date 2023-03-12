@@ -12,9 +12,9 @@ class Circle(Figure):
         self.radius = radius
 
     @property
-    def area(self) -> float:
+    def area(self) -> Union[float, int]:
         return round((pi * self.radius ** 2), 2)
 
     @property
-    def perimeter(self) -> float:
+    def perimeter(self) -> Union[float, int]:
         return round((2 * pi * self.radius), 2)

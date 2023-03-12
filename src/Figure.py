@@ -21,7 +21,7 @@ class Figure(ABC):
         if isinstance(figure, Figure):
             return self.area + figure.area
         else:
-            raise ValueError
+            raise ValueError("Суммируется не экземпляр класса Figure")
 
     def _check_sides(self):
         """

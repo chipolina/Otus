@@ -12,9 +12,9 @@ class Rectangle(Figure):
         self.b = b
 
     @property
-    def area(self) -> float:
+    def area(self) -> Union[float, int]:
         return self.a * self.b
 
     @property
-    def perimeter(self) -> float:
+    def perimeter(self) -> Union[float, int]:
         return (self.a + self.b) * 2
