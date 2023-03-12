@@ -1,4 +1,3 @@
-
 import pytest
 
 from src.Square import Square
@@ -51,8 +50,8 @@ class TestFigures:
             Triangle(a, b, c)
 
     @pytest.mark.parametrize("a, area, perimeter", [
-        pytest.param(15, 225, 30, id="Int numbers"),
-        pytest.param(15.0, 225, 30, id="Float number")
+        pytest.param(15, 225, 60, id="Int numbers"),
+        pytest.param(15.0, 225, 60, id="Float number")
     ])
     def test_check_good_square(self, a, area, perimeter):
         """

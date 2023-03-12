@@ -1,4 +1,4 @@
-from typing import  Union
+from typing import Union
 
 from src.Figure import Figure
 
@@ -6,10 +6,8 @@ from src.Figure import Figure
 class Rectangle(Figure):
 
     def __init__(self, a: Union[float, int], b: Union[float, int]):
-        super().__init__(a,b)
+        super().__init__(a, b)
         self.name = "Rectangle"
-        self.a = a
-        self.b = b
 
     @property
     def area(self) -> Union[float, int]:

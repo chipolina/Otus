@@ -29,7 +29,7 @@ class Figure(ABC):
         Если стороны/радиус меньше или равна 0, выбрасываем ошибку
         """
         for side in [self.a, self.b, self.c, self.radius]:
-            if not side is None:
+            if side is not None:
                 if not isinstance(side, (float, int)):
                     raise TypeError("Одна из сторон не является числом")
                 if side <= 0:
